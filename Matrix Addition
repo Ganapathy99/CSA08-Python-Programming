@@ -1,0 +1,25 @@
+a=[]
+b=[]
+c=[]
+print("Enter the matrix A:")
+for i in range(2):
+    matrix=[]
+    for j in range(2):
+        matrix.append(int(input()))
+    a.append(matrix)
+print("Enter the matrix B:")
+for i in range(2):
+    matrix1=[]
+    for j in range(2):
+        matrix1.append(int(input()))
+    b.append(matrix1)
+for i in range(2):
+    matrix2=[]
+    for j in range(2):
+        matrix2.append(a[i][j]+b[i][j])
+    c.append(matrix2)
+print("Matrix addition:")
+for i in range(2):
+    for j in range(2):
+        print(c[i][j],end=" ")
+    print()
